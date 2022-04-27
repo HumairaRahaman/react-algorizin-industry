@@ -1,220 +1,193 @@
-import React from 'react'
+import React from "react"
+import "tw-elements"
+import img from "./Ellipse 1.png"
 
 const Header = () => {
-    return (
-        <>
-        <nav className="
-  relative
+  return (
+    <>
+      <nav
+        className="
   w-full
   flex flex-wrap
   items-center
   justify-between
-  py-4
-  bg-gray-100
+  py-3
+  bg-white
   text-gray-500
   hover:text-gray-700
   focus:text-gray-700
   shadow-lg
   navbar navbar-expand-lg navbar-light
-  ">
-  <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-  
-  <div className="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
- 
- 
-  <ul className="navbar-nav flex flex-row pl-0 list-style-none mr-auto">
-    <li className="nav-item p-2">
-      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Dashboard</a>
-    </li>
-    <li className="nav-item p-2">
-      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Team</a>
-    </li>
-   
-  </ul>
+  "
+      >
+        <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+          <div className="navbar-nav flex flex-row pl-0 list-style-none mr-auto">
+            <div className="">
+              <div>
+                    {/* Starbucks  */}
+                <div className="dropdown relative">
+                  <button
+                    className="
+          dropdown-toggle
+          px-6
+          py-2.5
+          bg-white
+          text-gray-700
+          font-medium
+          text-sm
+          leading-tight
+          flex
+          items-center
+          whitespace-nowrap
+        "
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Starbucks
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="caret-down"
+                      className="w-2 ml-2"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* search input */}
+            <div className=" ml-32 ">
+              <div className="">
+                <div className="relative ">
+                  <div className="absolute top-auto left-3 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-11 w-5 text-xs text-gray-400"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    type="text"
+                    className="bg bg-gray-100 h-10 w-full  pl-10 pr-44 rounded-xl z-0 focus:shadow focus:outline-none"
+                    placeholder="Search"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
-  </div>
-
-
-
-  <div className="flex items-center relative">
-
-  <a className="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4" href="#">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart"
-      className="w-4" role="img" xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 576 512">
-      <path fill="currentColor"
-        d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
-      </path>
-    </svg>
-  </a>
-  <div className="dropdown relative">
-    <a className="
+          <div className="flex items-center relative">
+            <div className="dropdown relative">
+              <a
+                className="
           text-gray-500
           hover:text-gray-700
           focus:text-gray-700
           mr-4
-          dropdown-toggle
+         
           hidden-arrow
           flex items-center
-        " href="#" id="dropdownMenuButton1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell"
-        className="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-        <path fill="currentColor"
-          d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z">
-        </path>
-      </svg>
-      <span className="text-white bg-red-700 absolute rounded-full text-xs -mt-2.5 ml-2 py-0 px-1.5">1</span>
-    </a>
-    <ul className="
-      dropdown-menu
-      min-w-max
-      absolute
-      hidden
-      bg-white
-      text-base
-      z-50
-      float-left
-      py-2
-      list-none
-      text-left
-      rounded-lg
-      shadow-lg
-      mt-1
-      hidden
-      m-0
-      bg-clip-padding
-      border-none
-      left-auto
-      right-0
-    " aria-labelledby="dropdownMenuButton1">
-      <li>
-        <a className="
-          dropdown-item
-          text-sm
-          py-2
-          px-4
-          font-normal
-          block
-          w-full
-          whitespace-nowrap
-          bg-transparent
+        "
+                href="#"
+               
+                role="button"
+               
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div className="dropdown relative">
+              <a
+                className="dropdown-toggle flex items-center hidden-arrow"
+                href="#"
+                id="dropdownMenuButton2"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src={img} className="rounded-full" alt=""></img>
+              </a>
+            </div>
+            <div className="">
+              <div>
+                    {/* John Doe */}
+                <div className="dropdown relative">
+                  <button
+                    className="
+          dropdown-toggle
+          px-6
+          py-2.5
+          bg-white
           text-gray-700
-          hover:bg-gray-100
-        " href="#">Action</a>
-      </li>
-      <li>
-        <a className="
-          dropdown-item
+          font-medium
           text-sm
-          py-2
-          px-4
-          font-normal
-          block
-          w-full
+          leading-tight
+          flex
+          items-center
           whitespace-nowrap
-          bg-transparent
-          text-gray-700
-          hover:bg-gray-100
-        " href="#">Another action</a>
-      </li>
-      <li>
-        <a className="
-          dropdown-item
-          text-sm
-          py-2
-          px-4
-          font-normal
-          block
-          w-full
-          whitespace-nowrap
-          bg-transparent
-          text-gray-700
-          hover:bg-gray-100
-        " href="#">Something else here</a>
-      </li>
-    </ul>
-  </div>
-  <div className="dropdown relative">
-    <a className="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button"
-      data-bs-toggle="dropdown" aria-expanded="false">
-      {/* <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" className="rounded-full"
-        style="height: 25px; width: 25px" alt="" loading="lazy" /> */}
-    </a>
-    <ul className="
-    dropdown-menu
-    min-w-max
-    absolute
-    hidden
-    bg-white
-    text-base
-    z-50
-    float-left
-    py-2
-    list-none
-    text-left
-    rounded-lg
-    shadow-lg
-    mt-1
-    hidden
-    m-0
-    bg-clip-padding
-    border-none
-    left-auto
-    right-0
-  " aria-labelledby="dropdownMenuButton2">
-      <li>
-        <a className="
-        dropdown-item
-        text-sm
-        py-2
-        px-4
-        font-normal
-        block
-        w-full
-        whitespace-nowrap
-        bg-transparent
-        text-gray-700
-        hover:bg-gray-100
-      " href="#">Action</a>
-      </li>
-      <li>
-        <a className="
-        dropdown-item
-        text-sm
-        py-2
-        px-4
-        font-normal
-        block
-        w-full
-        whitespace-nowrap
-        bg-transparent
-        text-gray-700
-        hover:bg-gray-100
-      " href="#">Another action</a>
-      </li>
-      <li>
-        <a className="
-        dropdown-item
-        text-sm
-        py-2
-        px-4
-        font-normal
-        block
-        w-full
-        whitespace-nowrap
-        bg-transparent
-        text-gray-700
-        hover:bg-gray-100
-      " href="#">Something else here</a>
-      </li>
-    </ul>
-  </div>
-  </div>
- 
-  </div>
-</nav>
-</>
-    );
+        "
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    John Doe
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="caret-down"
+                      className="w-2 ml-2"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
+  );
 };
 
 export default Header;
