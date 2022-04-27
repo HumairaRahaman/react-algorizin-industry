@@ -142,7 +142,7 @@ const Header = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img src={img} className="rounded-full" alt=""></img>
+                <img src={img} className="rounded-full w-8 h-8 sm:h-6 sm:w-6 sm:m-2 md:h-8 md:w-8 md:m-0 lg:h-8 lg:w-8 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8" alt=""></img>
               </a>
             </div>
             <div className="">
