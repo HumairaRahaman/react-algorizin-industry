@@ -20,7 +20,7 @@ const Header = () => {
   navbar navbar-expand-lg navbar-light
   "
       >
-        <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+        <div className="container-fluid w-full flex md:flex-wrap lg:flex-wrap xl:flex-wrap 2xl:flex-wrap sm:flex-nowrap items-center justify-between px-6">
           <div className="navbar-nav flex flex-row pl-0 list-style-none mr-auto">
             <div className="">
               <div>
@@ -66,7 +66,7 @@ const Header = () => {
               </div>
             </div>
             {/* search input */}
-            <div className=" ml-32 ">
+            <div className=" lg:ml-32 xl:ml-32 2xl:ml-32 md:ml-0 sm:ml-0 hidden md:block sm:block lg:block xl:block 2xl:block ">
               <div className="">
                 <div className="relative ">
                   <div className="absolute top-auto left-3 ">
@@ -102,12 +102,17 @@ const Header = () => {
           text-gray-500
           hover:text-gray-700
           focus:text-gray-700
+          md:mr-4
+          lg:mr-4
+          xl:mr-4
+          2xl:mr-4
+          sm:mr-0
           mr-4
          
           hidden-arrow
           flex items-center
         "
-                href="#"
+                href="/"
                
                 role="button"
                
@@ -131,7 +136,7 @@ const Header = () => {
             <div className="dropdown relative">
               <a
                 className="dropdown-toggle flex items-center hidden-arrow"
-                href="#"
+                href="/"
                 id="dropdownMenuButton2"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -147,8 +152,16 @@ const Header = () => {
                   <button
                     className="
           dropdown-toggle
-          px-6
-          py-2.5
+          px-4
+          sm:px-0
+          md:px-3
+          lg:px-4
+          xl:px-4
+          2xl:px-6
+          lg:py-2.5
+          xl:py-2.5
+          2xl:py-2.5
+          
           bg-white
           text-gray-700
           font-medium
