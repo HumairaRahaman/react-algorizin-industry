@@ -2,7 +2,7 @@
 
 Algorizin Industry is a React Web App powered by [COINGECKO]()
 
-## Total Pages: 06
+## Total Pages: 01
 
 1.  Homepage
 2.  404 Not Found Page
