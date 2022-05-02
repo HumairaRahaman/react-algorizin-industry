@@ -11,10 +11,21 @@ const Homepage = () => {
     .then(data=> setTableData(data))
   },[])
   return (
-   <div>
+    <div className="grid grid-cols-7 gap-1 ">
+       <div className="col-span-1 bg-indigo-400">
+       
+       <div>Dashboard</div>
+       <div>Inventory</div>
+       <div>Documents</div>
+       <div>Settings</div>
+   
+   </div>
+   <div className="col-span-6 bg-cyan-600">
+     <h2>Inventory</h2>
     {
-      tableData.map((data,index)=><DataTable key={data.id} tableData={data}></DataTable>)
+      tableData.map(data=><DataTable key={data.id} tableData={data}></DataTable>)
     }
+    </div>
     </div>
   )
 }
