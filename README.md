@@ -1,11 +1,11 @@
 # Algorizin Industry Project Requirements
 
-Algorizin Industry is a React Web App powered by [COINGECKO]()
+Algorizin Industry is a React Web App powered by [COINGECKO](https://algorizin-industry.netlify.app/)
 
 ## Total Pages: 01
 
 1.  Homepage
-2.  404 Not Found Page
+2.  Data Table Page
 
 ## Tech Stack:
 
@@ -14,4 +14,4 @@ Algorizin Industry is a React Web App powered by [COINGECKO]()
 
 ## Resources:
 
-1.  Demo Site: []()# algorizin-industry
+1.  Live Site: [https://algorizin-industry.netlify.app/](https://algorizin-industry.netlify.app/)# algorizin-industry
