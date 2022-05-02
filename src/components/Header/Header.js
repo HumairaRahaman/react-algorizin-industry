@@ -1,6 +1,6 @@
-import React from "react"
-import "tw-elements"
-import img from "./Ellipse 1.png"
+import React from "react";
+import "tw-elements";
+import img from "./Ellipse 1.png";
 
 const Header = () => {
   return (
@@ -24,7 +24,7 @@ const Header = () => {
           <div className="navbar-nav flex flex-row pl-0 list-style-none mr-auto">
             <div className="">
               <div>
-                    {/* Starbucks  */}
+                {/* Starbucks  */}
                 <div className="dropdown relative">
                   <button
                     className="
@@ -33,6 +33,7 @@ const Header = () => {
           py-2.5
           bg-white
           text-gray-700
+          pl-2
           font-medium
           text-sm
           leading-tight
@@ -66,7 +67,7 @@ const Header = () => {
               </div>
             </div>
             {/* search input */}
-            <div className=" lg:ml-32 xl:ml-32 2xl:ml-32 md:ml-0 sm:ml-0 hidden md:block sm:block lg:block xl:block 2xl:block ">
+            <div className="flex-grow lg:ml-32 xl:ml-32 2xl:ml-32 md:ml-0 sm:ml-0 hidden md:block sm:block lg:block xl:block 2xl:block ">
               <div className="">
                 <div className="relative ">
                   <div className="absolute top-auto left-3 ">
@@ -87,7 +88,7 @@ const Header = () => {
                   </div>
                   <input
                     type="text"
-                    className="bg bg-gray-100 h-10 w-full  pl-10 pr-44 rounded-xl z-0 focus:shadow focus:outline-none"
+                    className="bg bg-gray-100 h-10 w-full  pl-10 pr-16 rounded-xl z-0 focus:shadow focus:outline-none"
                     placeholder="Search"
                   />
                 </div>
@@ -113,9 +114,7 @@ const Header = () => {
           flex items-center
         "
                 href="/"
-               
                 role="button"
-               
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -142,12 +141,16 @@ const Header = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img src={img} className="rounded-full w-8 h-8 sm:h-6 sm:w-6 sm:m-2 md:h-8 md:w-8 md:m-0 lg:h-8 lg:w-8 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8" alt=""></img>
+                <img
+                  src={img}
+                  className="rounded-full w-8 h-8 sm:h-6 sm:w-6 sm:m-2 md:h-8 md:w-8 md:m-0 lg:h-8 lg:w-8 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8"
+                  alt=""
+                ></img>
               </a>
             </div>
             <div className="">
               <div>
-                    {/* John Doe */}
+                {/* John Doe */}
                 <div className="dropdown relative">
                   <button
                     className="

@@ -1,25 +1,81 @@
 import React from "react"
 
-const DataTable = ({ tableData }) => {
-  const { dateUpdated, title, details, status, quantity, unitPrice, amount } =
-    tableData;
-  console.log(tableData);
+
+const DataTable = ({ data }) => {
+  if (data.id === "0") {
+    return (
+      <thead className="border-b-2">
+        <tr className="bg-[#FDF4ED]">
+          <td className="hidden md:inline-flex px-2 py-5 text-sm text-[#3E3F48] items-center justify-start text-center md:text-left">
+            <input className="h-4 w-4" type="checkbox" name="" id="" />
+          </td>
+          <td className="hidden md:inline-flex lg:inline-flex text-sm text-[#3E3F48] px-2 py-5 text-center md:text-left">
+            <div className="inline-flex items-center justify-start space-x-1">
+              <p>Date Updated</p>
+              <img src="/5.svg" alt="" />
+            </div>
+          </td>
+          <td className="text-sm text-[#3E3F48] px-2 py-5 text-center md:text-left">
+            <div className="inline-flex items-center justify-start space-x-1">
+              <p>Title</p>
+              <img src="/6.svg" alt="" />
+            </div>
+          </td>
+          <td className="hidden xl:inline-flex text-sm text-[#3E3F48] px-2 py-5 text-center md:text-left">
+            Details
+          </td>
+          <td className="opacity-0 md:opacity-100 text-sm text-[#3E3F48] px-2 py-5 text-center md:text-left">Status
+          </td>
+          <td className="text-sm text-[#3E3F48] px-2 py-5">
+            <span className="hidden xl:inline-flex text-center md:text-left">Qunatity</span>
+          </td>
+          <td className="hidden xl:inline-flex text-sm text-[#3E3F48] px-2 py-5 text-center md:text-left">
+            Unit Price
+          </td>
+          <td className="text-sm text-[#3E3F48] px-2 py-5 text-center md:text-left">
+            <div className="inline-flex items-center justify-start space-x-1">
+              <p>Amount</p>
+              <img src="/6.svg" alt="" />
+            </div>
+          </td>
+        </tr>
+      </thead>
+    );
+  }
   return (
-   
-   
-       <table>
-        <tbody>
-        
-          <tr className="">
-            <td>{title}</td>
-            <td>{quantity}</td>
-            <td>{amount}</td>
-          </tr>
-          
-        </tbody>
-      </table>
-  
-   
+    <tbody >
+      <tr className={`${data.id % 2 === 0 ? 'bg-[#effbf0]' : 'bg-white'}`}>
+        <td className="hidden md:inline-flex px-2 text-center md:text-left py-5 text-sm text-[#3E3F48] items-center justify-start ">
+          <input className="h-4 w-4" type="checkbox" name="" id="" />
+        </td>
+        <td className="hidden md:inline-flex lg:inline-flex text-sm text-[#3E3F48] px-2 text-center md:text-left py-5 ">
+          {data.dateUpdated}
+        </td>
+        <td className="text-sm text-[#3E3F48] px-2 text-center md:text-left py-5 ">{data.title}</td>
+        <td className="hidden xl:inline-flex text-sm text-[#3E3F48] px-2 text-center md:text-left py-5 ">
+          {data.details}
+        </td>
+        <td className="text-sm text-[#3E3F48] px-2 text-center md:text-left py-5 ">
+          <div className="flex items-center space-x-2 justify-center md:justify-start">
+            <p className="hidden md:inline-flex lg:inline-flex">{data.status}</p>
+            <div
+              className={`h-2 rounded-full w-2 ${
+                data.circle === "red"
+                  ? "bg-[#F52828]"
+                  : data.circle === "green"
+                  ? "bg-[#44C776]"
+                  : "bg-[#F58A28]"
+              }`}
+            ></div>
+          </div>
+        </td>
+        <td className="text-sm text-[#3E3F48] px-2 text-center md:text-left py-5 ">{data.quantity}</td>
+        <td className="hidden xl:inline-flex text-sm text-[#3E3F48] px-2 text-center md:text-left py-5 ">
+          {data.unitPrice}
+        </td>
+        <td className="text-sm text-[#3E3F48] px-2 text-center md:text-left py-5 ">{data.amount}</td>
+      </tr>
+    </tbody>
   );
 };
 
