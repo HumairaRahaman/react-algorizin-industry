@@ -6,7 +6,8 @@ const App = () => {
   return (
     <div>
       <Header></Header>
-     <Homepage></Homepage>
+      <Homepage></Homepage>
+     
      
     </div>
   )
